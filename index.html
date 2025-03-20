@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Список задач</title>
+</head>
+<body>
+<header class="header">
+  <h1>Список задач</h1>
+</header>
+<main>
+  <div class="create-task-section">
+    <h1>Новая задача</h1>
+    <div class="flex-fields">
+      <input placeholder="Название задачи..." type="text">
+      <button>
+        <img class="icon" src="assets/add.svg" alt="+"/>
+        Добавить
+      </button>
+    </div>
+  </div>
+  <div class="display-tasks-section">
+    <div class="status-pattern status-backlog">
+      <h3>Бэклог</h3>
+      <ul>
+        <li>Выучить JS</li>
+        <li>Выучить React</li>
+        <li>Сделать домашку</li>
+      </ul>
+    </div>
+    <div class="status-pattern status-in-process">
+      <h3>В процессе</h3>
+      <ul>
+        <li>Выпить смузи</li>
+        <li>Попить воды</li>
+      </ul>
+    </div>
+    <div class="status-pattern status-complete">
+      <h3>Готово</h3>
+      <ul>
+        <li>Позвонить маме</li>
+        <li>Погладить кота</li>
+      </ul>
+    </div>
+    <div class="status-pattern status-trash">
+      <h3>Корзина</h3>
+      <ul>
+        <li>Сходить погулять</li>
+        <li>Прочитать Войну и Мир</li>
+      </ul>
+      <button class="clear-button" type="button">
+        <img class="icon" src="assets/clear.svg" alt="x"/>
+        Очистить
+      </button>
+    </div>
+  </div>
+</main>
+</body>
+</html>
